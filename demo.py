@@ -16,6 +16,9 @@ from loguru import logger
 # Add the src directory to the Python path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
+# Import config first to set up logging
+import config
+
 from business.services import BusinessFacade, BusinessException
 from database.inmemory_db import DatabaseManager
 from transaction.manager import TransactionException

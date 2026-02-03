@@ -1,1 +1,59 @@
-2026-02-03 20:56:41.722 | DEBUG    | config:__init__:121 - Performance monitor initialized
+2026-02-03 21:09:33.220 | DEBUG    | config:__init__:121 - Performance monitor initialized
+2026-02-03 21:09:33.246 | INFO     | __main__:_initialize_system:41 - Starting system initialization
+2026-02-03 21:09:33.246 | INFO     | database.inmemory_db:initialize_system_databases:192 - Initializing system databases
+2026-02-03 21:09:33.246 | DEBUG    | database.inmemory_db:initialize_system_databases:199 - Financial database initialized with tables: users, accounts, transactions
+2026-02-03 21:09:33.247 | DEBUG    | database.inmemory_db:initialize_system_databases:207 - Inventory database initialized with tables: categories, products, orders, order_items
+2026-02-03 21:09:33.247 | SUCCESS  | database.inmemory_db:initialize_system_databases:209 - System databases initialized successfully
+2026-02-03 21:09:33.247 | SUCCESS  | __main__:_initialize_system:50 - System initialization completed
+2026-02-03 21:09:33.247 | INFO     | __main__:run_comprehensive_demo:348 - Starting comprehensive demonstration
+2026-02-03 21:09:33.247 | INFO     | __main__:create_sample_data:56 - Starting sample data creation
+2026-02-03 21:09:33.247 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:b59a900c - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 247665)}
+2026-02-03 21:09:33.248 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:b59a900c - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 248042), 'operations_count': 6}
+2026-02-03 21:09:33.248 | INFO     | __main__:create_sample_data:78 - Created 4 categories successfully
+2026-02-03 21:09:33.248 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:4aacc3e6 - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 248232)}
+2026-02-03 21:09:33.250 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:4aacc3e6 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 250751), 'operations_count': 18}
+2026-02-03 21:09:33.250 | INFO     | __main__:create_sample_data:104 - Created 3 users and 6 accounts successfully
+2026-02-03 21:09:33.251 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:f067bf62 - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 251111)}
+2026-02-03 21:09:33.251 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:f067bf62 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 251546), 'operations_count': 8}
+2026-02-03 21:09:33.251 | INFO     | __main__:create_sample_data:134 - Created 4 products successfully
+2026-02-03 21:09:33.251 | INFO     | __main__:demonstrate_basic_operations:144 - Starting basic operations demonstration
+2026-02-03 21:09:33.251 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:f93c5213 - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 251977)}
+2026-02-03 21:09:33.252 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:f93c5213 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 252388), 'operations_count': 5}
+2026-02-03 21:09:33.252 | INFO     | __main__:demonstrate_basic_operations:157 - Money transfer demonstration successful - TX:1
+2026-02-03 21:09:33.252 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:3512214e - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 252622)}
+2026-02-03 21:09:33.252 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:3512214e - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 252917), 'operations_count': 3}
+2026-02-03 21:09:33.253 | INFO     | __main__:demonstrate_basic_operations:168 - Deposit demonstration successful - TX:2
+2026-02-03 21:09:33.253 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:2ab19e05 - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 253106)}
+2026-02-03 21:09:33.253 | WARNING  | transaction.manager:log_operation:309 - ROLLBACK_TRANSACTION - TX:2ab19e05 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 253395), 'rollback_operations_count': 0}
+2026-02-03 21:09:33.253 | ERROR    | __main__:demonstrate_basic_operations:188 - Basic operations demonstration failed: Operation failed: Failed to create order: Insufficient funds for payment
+2026-02-03 21:09:33.253 | INFO     | __main__:demonstrate_concurrency_control:193 - Starting concurrency control demonstration
+2026-02-03 21:09:33.254 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:90cbfe94 - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 254028)}
+2026-02-03 21:09:33.254 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:90cbfe94 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 254404), 'operations_count': 5}
+2026-02-03 21:09:33.354 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:46a18f98 - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 354447)}
+2026-02-03 21:09:33.355 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:46a18f98 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 354992), 'operations_count': 5}
+2026-02-03 21:09:33.454 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:987a80d8 - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 454951)}
+2026-02-03 21:09:33.455 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:987a80d8 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 455650), 'operations_count': 5}
+2026-02-03 21:09:33.555 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:f468e34e - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 555477)}
+2026-02-03 21:09:33.555 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:f468e34e - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 555910), 'operations_count': 5}
+2026-02-03 21:09:33.656 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:7fcd269b - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 656082)}
+2026-02-03 21:09:33.656 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:7fcd269b - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 656602), 'operations_count': 5}
+2026-02-03 21:09:33.756 | INFO     | __main__:demonstrate_concurrency_control:234 - Concurrent operation result: Transfer Concurrent#1: Success (TX: 3)
+2026-02-03 21:09:33.756 | INFO     | __main__:demonstrate_concurrency_control:234 - Concurrent operation result: Transfer Concurrent#2: Success (TX: 4)
+2026-02-03 21:09:33.756 | INFO     | __main__:demonstrate_concurrency_control:234 - Concurrent operation result: Transfer Concurrent#3: Success (TX: 5)
+2026-02-03 21:09:33.756 | INFO     | __main__:demonstrate_concurrency_control:234 - Concurrent operation result: Transfer Concurrent#4: Success (TX: 6)
+2026-02-03 21:09:33.756 | INFO     | __main__:demonstrate_concurrency_control:234 - Concurrent operation result: Transfer Concurrent#5: Success (TX: 7)
+2026-02-03 21:09:33.756 | INFO     | __main__:demonstrate_transaction_restart:247 - Starting transaction restart demonstration
+2026-02-03 21:09:33.757 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:7856cef8 - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 757158)}
+2026-02-03 21:09:33.757 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:759ea63e - {'thread_id': '140737309726400', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 33, 757458)}
+2026-02-03 21:09:34.057 | DEBUG    | transaction.manager:log_operation:313 - COMMIT_TRANSACTION - TX:759ea63e - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 57952), 'operations_count': 5}
+2026-02-03 21:09:34.257 | WARNING  | transaction.manager:log_operation:309 - ROLLBACK_TRANSACTION - TX:7856cef8 - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 257474), 'rollback_operations_count': 0}
+2026-02-03 21:09:34.257 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:7843df1e - {'thread_id': '140737318135488', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 257844)}
+2026-02-03 21:09:34.257 | INFO     | transaction.manager:log_operation:311 - Transaction restarted - TX:7856cef8 - {'new_transaction_id': '7843df1e-c582-43c5-9e42-17e0bcfdc534', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 257956)}
+2026-02-03 21:09:34.258 | WARNING  | transaction.manager:log_operation:309 - ROLLBACK_TRANSACTION - TX:7843df1e - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 258081), 'rollback_operations_count': 0}
+2026-02-03 21:09:34.260 | INFO     | __main__:demonstrate_transaction_restart:285 - Transaction restart result - T2: TX:8
+2026-02-03 21:09:34.260 | INFO     | __main__:demonstrate_rollback:292 - Starting rollback demonstration
+2026-02-03 21:09:34.261 | DEBUG    | transaction.manager:log_operation:313 - BEGIN_TRANSACTION - TX:882d94fc - {'thread_id': '140737352619840', 'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 261076)}
+2026-02-03 21:09:34.261 | WARNING  | transaction.manager:log_operation:309 - ROLLBACK_TRANSACTION - TX:882d94fc - {'timestamp': datetime.datetime(2026, 2, 3, 21, 9, 34, 261427), 'rollback_operations_count': 2}
+2026-02-03 21:09:34.261 | SUCCESS  | __main__:demonstrate_rollback:315 - Rollback demonstration successful: Operation failed: Failed to transfer money: Insufficient funds
+2026-02-03 21:09:34.261 | INFO     | __main__:show_system_statistics:323 - Displaying system statistics
+2026-02-03 21:09:34.261 | SUCCESS  | __main__:run_comprehensive_demo:370 - Comprehensive demonstration completed successfully
